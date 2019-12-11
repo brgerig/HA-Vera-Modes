@@ -6,7 +6,8 @@ This requires Button Card >= 3.0.0. Available in HACS, or see https://github.com
 Buttons may not work in some browsers/UIs
 
 # Installation
-Add or update `sensors.yaml` and `rest.yaml` in your homeassistant configuration directory. In your `configuration.yaml` file, ensure that these lines are present:
+Add or update `sensors.yaml` and `rest.yaml` in your homeassistant configuration directory. Be sure to replace [Vera_IP_address] with the IP Address of your Vera.  
+In your `configuration.yaml` file, ensure that these lines are present:
 ```yaml
 sensor: !include sensors.yaml
 rest_command: !include rest.yaml
