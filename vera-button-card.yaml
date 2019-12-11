@@ -1,0 +1,74 @@
+cards:
+  - color: '#FFFFFF'
+    color_type: card
+    entity: sensor.vera_house_mode
+    hold_action:
+      action: more-info
+    icon: 'mdi:home'
+    name: Home
+    show_icon: true
+    show_name: true
+    state:
+      - color: '#006d47'
+        value: Home
+    tap_action:
+      action: call-service
+      service: rest_command.hm_command
+      service_data:
+        mode: 1
+    type: 'custom:button-card'
+  - color: '#FFFFFF'
+    color_type: card
+    entity: sensor.vera_house_mode
+    hold_action:
+      action: more-info
+    icon: 'mdi:car-side'
+    name: Away
+    show_icon: true
+    show_name: true
+    state:
+      - color: '#006d47'
+        value: Away
+    tap_action:
+      action: call-service
+      service: rest_command.hm_command
+      service_data:
+        mode: 2
+    type: 'custom:button-card'
+  - color: '#FFFFFF'
+    color_type: card
+    entity: sensor.vera_house_mode
+    hold_action:
+      action: more-info
+    icon: 'mdi:weather-night'
+    name: Night
+    show_icon: true
+    show_name: true
+    state:
+      - color: '#006d47'
+        value: Night
+    tap_action:
+      action: call-service
+      service: rest_command.hm_command
+      service_data:
+        mode: 3
+    type: 'custom:button-card'
+  - color: '#FFFFFF'
+    color_type: card
+    entity: sensor.vera_house_mode
+    hold_action:
+      action: more-info
+    icon: 'mdi:airplane'
+    name: Vacation
+    show_icon: true
+    show_name: true
+    state:
+      - color: '#006d47'
+        value: Vacation
+    tap_action:
+      action: call-service
+      service: rest_command.hm_command
+      service_data:
+        mode: 4
+    type: 'custom:button-card'
+type: horizontal-stack
