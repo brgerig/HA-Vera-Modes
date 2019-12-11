@@ -1,0 +1,3 @@
+hm_command:
+  url: 'http://[Vera_IP_address]:3480/data_request?id=lu_action&serviceId=urn:micasaverde-com:serviceId:HomeAutomationGateway1&action=SetHouseMode&Mode={{ mode }}'
+  method: get
