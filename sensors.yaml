@@ -1,6 +1,6 @@
 - platform: rest
   name: "Vera House Mode"
-  resource: "http://[Vera_IP_address]2:3480/data_request?id=variableget&Variable=Mode"
+  resource: "http://[Vera_IP_address]:3480/data_request?id=variableget&Variable=Mode"
   method: "GET"
   scan_interval: 5
   value_template: >-
