@@ -17,17 +17,17 @@ You must restart Home Assistant for the previous changes to take effect.
 In your Lovelace UI, add a Horizontal Stack Card. The code for the stack card is in `vera-button-card.yaml`
 
 # Usage
-The card will display the current Vera House Mode.
-Clicking on a button on the card will change the House Mode in Vera.
-The state of `sensor.vera_house_mode` can be used in integrations.
+The card will display the current Vera House Mode.  
+Clicking on a button on the card will change the House Mode in Vera.  
+The state of `sensor.vera_house_mode` can be used in integrations.  
 To programmatically change the House Mode, call the following service:
 ```yaml
       service: rest_command.hm_command
       service_data:
         mode: [1,2,3,4]
 ```
-Mode values:
-1: Home
-2: Away
-3: Night
-4: Vacation
+Mode values:  
+1: Home  
+2: Away  
+3: Night  
+4: Vacation  
