@@ -22,12 +22,12 @@ Clicking on a button on the card will change the House Mode in Vera.
 The state of `sensor.vera_house_mode` can be used in integrations.  
 To programmatically change the House Mode, call the following service:
 ```yaml
-      service: rest_command.hm_command
-      service_data:
-        mode: [1,2,3,4]
+service: rest_command.hm_command
+service_data:
+  mode: [1,2,3,4]
 ```
 Mode values:  
 1: Home  
 2: Away  
 3: Night  
-4: Vacation  
+4: Vacation
